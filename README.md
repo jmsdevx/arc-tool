@@ -1,69 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ArcApi.org
+#### a project by James Sheehan & Emmanuel Bravo
+Project started Jan 25, 2019 and completed on Feb 24, 2019. 
+-Approximately 6 hours of collaborative planning on the system & algorithms.
+-Approximately 10 collective hours of programming went to writing code.  
+#### Walkthrough
+![example](https://media.giphy.com/media/oFS6v0Kem9iOqKsxcb/giphy.gif)
 
-## Available Scripts
+#### Themes
+![Themes](https://media.giphy.com/media/1X7v50FreM0qkRJo6T/giphy.gif)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Table of Contents
+- [Preplanning](#preplanning)
+	- [Wire-Frame](#wire-frame)
+	- [Schema](#schema)
+- [Main Challenges](#main-challenges)
+	- [1. Developing the System](#developing-the-system)
+	- [2. Dynamic MUI Themes](#dynamic-mui-themes)
+	- [3. Displaying JSON](#react-json-pretty)
+- [Technology](#technology)
+	- [Material UI](#material-ui)
+	- [React Router Hash Link](#react-router-hash-link)
+	- [React JSON Pretty](#react-json-pretty)
+	- [React Select](#react-select)
+	- [Express](#express)
+	- [React](#react)
+	- [Axios](#axios)
+	- [Deployment](#deployment)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Preplanning
+###  Wire-Frame
+Below is the initial wireframe created during pre-planning
+![componentTree](https://s3.us-east-2.amazonaws.com/khamwas-readme/Screen+Shot+2019-02-26+at+7.21.55+PM.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Schema
+Our initial data set and api calls are not heavy on computation. So we used a NoSQL approach to storing and manipulating JSON objects. Our initial object structure allows us to grab related data and return it to the user based on their api call.
+```json
+ {
+      "archetype_id": 1,
+      "drive": "leave a mark",
+      "aspect": "ego",
+      "method": "mastery",
+      "shadow": "end justify the means",
+      "name": "warrior",
+      "alias": "hero",
+      "role": "student",
+      "color": "red"
+    }
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology
 
-### `npm run eject`
+### Material-UI
+For API documentation, our design process was geared toward developers.  
+The goal was to create a simple, intuitive UI which could clearly showcase the capabilities of the API. 
+Material UI provides a consistent, familiar environment for users.
+Through simple theme customization we provide 12 dynamic palettes, which contribute to the overall UX
+by allowing user controlled theme switching which coincides with different requests being made. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### React Router Hash Link
+Providng full JSON objects as examples requires a lot of screen real estate. 
+React Router Hash Link provides seamless navigation with anchor tags and gradual transitions. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### React JSON Pretty
+Does "Objects are not valid as a react child".... sound familiar?
+React JSON Pretty provided the abilitiy to render JSON objects to the dom with custom theming. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### React Select
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Express
 
-### Code Splitting
+### React
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### Axios
 
 ### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# arc-tool
